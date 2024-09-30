@@ -1,0 +1,88 @@
+site_name: Documentação SPOT-R
+
+theme:
+  name: material
+  language: pt-BR
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Escuro (dark mode)
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Claro (light mode)
+
+  logo: assets/inpo_logo.png
+
+site_url: "https://rmoliveira17.github.io/inpo_spotr_documentation/"
+
+nav:
+    - Visão Geral: 'docs/visao_geral.md'
+    - Sistema:
+        - Versão: 'docs/sistema/versao.md'
+        - Requisitos: 'docs/sistema/requisito.md'
+        - Guia de Instalação: 'docs/sistema/guia_instalacao.md'
+        - Registro de Licença: 'docs/sistema/registro_licenca.md'
+        - Sugestão de Melhorias: 'docs/sistema/melhorias.md'
+    - Especificação Funcional: 'docs/espec_funcional.md'
+    - Guia de Utilização:
+        - Atalhos do Teclado: 'docs/utilizacao/atalhos.md'
+        - Importação:
+            - Introdução: 'docs/utilizacao/importacao/importacao.md'
+            - Arquivos de Cenários: 'docs/utilizacao/importacao/arquivos_cenarios.md'
+            - Edição, Cópia e Exportação: 'docs/utilizacao/importacao/edit_copy_export.md'
+        - Cálculo de Distâncias: 'docs/utilizacao/func_distancias.md'
+        - Matriz OD: 'docs/utilizacao/func_matrizod.md'
+        - Parâmetros de Modelagem: 'docs/utilizacao/modelagem.md'
+        - Resultados de Simulação: 'docs/utilizacao/simulacao.md'
+        - Log de Rodada: 'docs/utilizacao/log_rodada.md'
+    - Especificação Técnica:
+        - Painel Inicial: 'docs/espec_tecnica/painel_inicial.md'
+        - Arquivo de Entrada:
+            - Elementos Obrigatórios:
+              - Introdução: 'docs/espec_tecnica/intro.md'
+              - Clientes: 'docs/espec_tecnica/clientes.md'
+              - Instalação: 'docs/espec_tecnica/instalacao.md'
+              - Veículo: 'docs/espec_tecnica/veiculos.md'
+            - Elementos Opcionais:
+                - Introdução: 'docs/espec_tecnica/intro2.md'
+                - Matriz OD: 'docs/espec_tecnica/matriz_od.md'
+                - Restrição: 'docs/espec_tecnica/restricao.md'
+                - Limitação: 'docs/espec_tecnica/limitacao.md'
+                - Cotação: 'docs/espec_tecnica/cotacao.md'
+                - Matriz OD Valor: 'docs/espec_tecnica/matriz_od_valor.md'
+        - Modelo de Execução: 'docs/espec_tecnica/modelo_execucao.md'
+        - Painel de Opções: 'docs/espec_tecnica/painel_opcoes.md'
+        - Painel de Resultados:
+            - Introdução: 'docs/espec_tecnica/painel_resultados.md'
+            - Mapa: 'docs/espec_tecnica/mapa.md'
+        - Arquivos de Saída:
+            - Consolidado: 'docs/espec_tecnica/consolidado.md'
+            - Itinerários: 'docs/espec_tecnica/itinerarios.md'
+            - Clientes Não Atendidos: 'docs/espec_tecnica/clientes_nao_atendidos.md'
+    - Sobre a INPO: 'docs/sobre.md'
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - md_in_html
+  - attr_list
+
+extra_css:
+  - css/custom.css
+
+plugins:
+  - glightbox
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js
