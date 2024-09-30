@@ -1,9 +1,6 @@
 O SPOT.R possui o seguinte painel inicial, retratado pela Figura 28:
 
-<figure markdown="span">
-  ![Image title](/docs/espec_tecnica/img/img.png){ width="500" }
-  <figcaption>Painel inicial do sistema</figcaption>
-</figure>
+![s1.png](img/s1.png)
 
 No painel inicial estão acessíveis os demais painéis de manipulação da ferramenta. Na barra lateral
 esquerda (em azul) estão acessíveis os painéis associados a cada elemento do modelo. Existem elementos
