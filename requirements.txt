@@ -1,6 +1,0 @@
-mkdocs>=1.4.2
-mkdocs-material>=9.1.8
-mkdocs-markdownextradata-plugin>=0.1.8
-mkdocs-awesome-pages-plugin>=2.8.0
-mkdocs-mermaid2-plugin>=0.5.2
-mkdocs-glightbox
